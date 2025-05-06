@@ -1,20 +1,21 @@
 package to_do_list;
 
-import java.util.ArrayList;
+import javax.swing.*;
 import java.util.*;
 
 public class main {
 
 	public static void main(String[] args) {
+				
+		new frame();
 		
 		ArrayList<String> tasks = new ArrayList<>(); // create an array list object
 		Scanner scanner = new Scanner(System.in);
 
-		System.out.println("1. Add Task");
-		System.out.println("2. View Tasks");
-		System.out.println("3. Exit");
-			
-		
+		//System.out.println("1. Add Task");
+		//System.out.println("2. View Tasks");
+		//System.out.println("3. Exit");
+		/*
 		while (true) {
 		    int choice = scanner.nextInt(); // take user input
 		    scanner.nextLine(); // This consumes the leftover newline
@@ -33,8 +34,9 @@ public class main {
 		            System.exit(0);
 		    			  }
 					}
-
+*/
 		}
+	
 	
 	
 }
