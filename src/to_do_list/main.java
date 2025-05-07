@@ -9,7 +9,8 @@ public class main {
 				
 		new frame();
 		
-		ArrayList<String> tasks = new ArrayList<>(); // create an array list object
+		
+	
 		Scanner scanner = new Scanner(System.in);
 
 		//System.out.println("1. Add Task");

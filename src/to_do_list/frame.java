@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
@@ -12,6 +13,7 @@ import javax.swing.JFrame;
 public class frame extends JFrame implements ActionListener{
 	
 	JButton addButton1, addButton2;
+	
 	
 	frame(){
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // when we press close button it will close
@@ -48,11 +50,14 @@ public class frame extends JFrame implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if(e.getSource()==addButton1) {
-			new addTaskWindow();
+			
+			this.setEnabled(false);
+			addTaskWindow AddWindow = new addTaskWindow(frame.this);
 		}
 		
 		if(e.getSource()==addButton2) {
 			System.out.println("Deleted");
+			
 		}
 	}
 
